@@ -1,0 +1,19 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+/dev/mapper/docker--vg-root /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/sda1 during installation
+UUID=5a074456-cbd9-45e3-b679-a7e23235f222 /boot           ext2    defaults        0       2
+/dev/mapper/docker--vg-swap_1 none            swap    sw              0       0
+ZeroDay			/media/Comics/ZeroDay      	vboxsf   defaults  0   0
+ComicRack_Library       /media/Comics/ComicRack 	vboxsf   defaults  0   0
+Downloaded_Comics       /media/Comics/DownloadedComics  vboxsf   defaults  0   0
+Movies                  /media/Videos/Movies            vboxsf   defaults  0   0
+New_Movies              /media/Videos/NewMovies         vboxsf   defaults  0   0
+New_TV_Shows            /media/Videos/NewTVShows        vboxsf   defaults  0   0
+TV_Shows                /media/Videos/TVShows           vboxsf   defaults  0   0
+Landing_Pad		/media/LandingPad		vboxsf   defaults  0   0
